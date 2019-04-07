@@ -97,3 +97,7 @@ export const LocateButton = styled.a`
     margin-right: 5px;
   }
 `;
+
+export const CardStyle = styled.div`
+
+`;

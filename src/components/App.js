@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import get from 'lodash.get';
 import { locate } from '../actions';
+import getLocation from '../fetch';
+import data from '../fetch/locObj'
 import logo from '../assets/logo.png';
 import ListingCards from './listing_cards';
 import Locate from '../icons/locate';
@@ -28,25 +30,30 @@ const regionLabels = {
 
 export class App extends Component {
   constructor(props) {
-    super();
+    super(props);
     this.state = {
       loadingTimer: 0,
     };
   }
 
+  // locateMe() {
+  //   const { dispatch } = this.props;
+
+  //   if (navigator.geolocation) {
+  //     navigator.geolocation.getCurrentPosition(position => {
+  //       dispatch(locate(position.coords));
+  //     });
+  //   }
+  // };
+
   locateMe() {
-    const { dispatch } = this.props;
-
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(position => {
-        dispatch(locate(position.coords));
-      });
-    }
-  };
-
+    alert(`${JSON.stringify(data.data.location)}`)
+    console.log(data.data.regions);
+    
+  }
+  
   render() {
-    const { isLocating, location, regions, error } = this.props;
-
+    const { isLocating, location, regions, error } = data.data;
     const getLabel = (listings, label) => {
       if (get(listings, 'listings').length) {
         return (
@@ -105,7 +112,10 @@ export class App extends Component {
   }
 }
 
-const mapStateToProps = state => state.location;
+const mapStateToProps = (state) => {
+  console.log(state);
+  return state.location
+};
 
 App.propTypes = {
   isLocating: PropTypes.bool.isRequired,
