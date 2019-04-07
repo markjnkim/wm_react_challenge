@@ -36,10 +36,13 @@ export class App extends Component {
       loadingTimer: 0,
     };
   }
+  componentDidMount(){
+    // this.props.requestLectures(this.props.isLoading);
+     console.log(this.props);
+   }
 
   // locateMe() {
   //   const { dispatch } = this.props;
-
   //   if (navigator.geolocation) {
   //     navigator.geolocation.getCurrentPosition(position => {
   //       dispatch(locate(position.coords));
@@ -48,9 +51,8 @@ export class App extends Component {
   // };
 
   locateMe() {
-    alert(`${JSON.stringify(data.data.location)}`)
-    console.log(data.data.regions);
-
+    alert(this)
+    console.log(this);
   }
 
   render() {
@@ -115,10 +117,7 @@ export class App extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
-  console.log(state);
-  return { location: state.location }
-};
+const mapStateToProps = (state) => state.location;
 
 App.propTypes = {
   isLocating: PropTypes.bool.isRequired,

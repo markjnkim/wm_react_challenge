@@ -102,26 +102,24 @@ export const LocateButton = styled.a`
 export const CardStyle = styled.div`
   margin: 4px;
   padding: 3px;
-
 `;
 
 export const DIV1 = styled.div`
   margin: 4px;
   padding: 3px;
   text-align: left;
-
 `;
 
 export const DIV2 = styled.div`
   margin: 4px;
   padding: 3px;
-
+  color: grey;
+  font-size: 14px;
 `;
 
 export const DIV3 = styled.div`
   margin: 4px;
   padding: 3px;
-
 `;
 
 export const DivWrapper = styled.div`
@@ -132,16 +130,17 @@ export const DivWrapper = styled.div`
 
 export const CardWrapper = styled.div`
   width: 80%;
-  height: 130px;
+  height: 70%;
   display: flex;
   text-align: left;
   margin-top: 20px;
-  vertical-align: bottom;
   padding: 2%;
   background-color: white;
+  border-radius: 6px;
+
 `;
 
 export const AvatarWrapper = styled.div`
   vertical-align: bottom;
-  padding-top: 5%;
+  padding-top: 3%;
 `;
