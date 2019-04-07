@@ -125,7 +125,6 @@ export const DIV3 = styled.div`
 export const DivWrapper = styled.div`
   margin: 4px;
   padding: 3px;
-
 `;
 
 export const CardWrapper = styled.div`
@@ -137,10 +136,23 @@ export const CardWrapper = styled.div`
   padding: 2%;
   background-color: white;
   border-radius: 6px;
-
 `;
 
 export const AvatarWrapper = styled.div`
   vertical-align: bottom;
   padding-top: 3%;
+`;
+
+export const SPAN = styled.span`
+  color: green;
+`;
+
+export const StarWrapper = styled.div`
+  color: green;
+  background-color: white;
+`;
+
+export const StarInner = styled.div`
+  color: green;
+  background-color: white;
 `;

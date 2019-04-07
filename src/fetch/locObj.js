@@ -58,7 +58,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "storefront"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 42992,
@@ -85,7 +115,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "storefront"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 44223,
@@ -112,7 +172,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "storefront"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 12360,
@@ -139,7 +229,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "storefront"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 54978,
@@ -166,7 +286,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "storefront"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 57924,
@@ -193,7 +343,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "storefront"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 46495,
@@ -220,7 +400,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "storefront"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 49837,
@@ -247,7 +457,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "storefront"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 53673,
@@ -274,7 +514,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "storefront"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 }
             ]
         },
@@ -319,7 +589,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 42570,
@@ -346,7 +646,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 40584,
@@ -373,7 +703,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 3273,
@@ -400,7 +760,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 600,
@@ -427,7 +817,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 43262,
@@ -454,7 +874,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 45035,
@@ -481,7 +931,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 46615,
@@ -508,7 +988,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 42487,
@@ -535,7 +1045,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 49981,
@@ -562,7 +1102,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 13509,
@@ -589,7 +1159,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 308,
@@ -616,7 +1216,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 17517,
@@ -643,7 +1273,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 12701,
@@ -670,7 +1330,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 25661,
@@ -697,7 +1387,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 128,
@@ -724,7 +1444,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 4647,
@@ -751,7 +1501,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 3864,
@@ -778,7 +1558,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 }
             ]
         },
@@ -823,7 +1633,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "doctor"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 15156,
@@ -850,7 +1690,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "doctor"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 11988,
@@ -877,7 +1747,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "doctor"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 14100,
@@ -904,7 +1804,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "doctor"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 12790,
@@ -931,7 +1861,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "doctor"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 }
             ]
         },
@@ -976,7 +1936,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 42570,
@@ -1003,7 +1993,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 40584,
@@ -1030,7 +2050,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 3273,
@@ -1057,7 +2107,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 600,
@@ -1084,7 +2164,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 43262,
@@ -1138,7 +2248,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 46615,
@@ -1165,7 +2305,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 42487,
@@ -1192,7 +2362,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 49981,
@@ -1219,7 +2419,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 13509,
@@ -1246,7 +2476,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 308,
@@ -1273,7 +2533,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 17517,
@@ -1300,7 +2590,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 12701,
@@ -1327,7 +2647,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 25661,
@@ -1354,7 +2704,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 128,
@@ -1408,7 +2788,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 },
                 {
                     "id": 3864,
@@ -1435,7 +2845,37 @@ exports.data = {
                     },
                     "retailer_services": [
                         "delivery"
-                    ]
+                    ],
+                    "business_hours":{
+                       "sunday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "monday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "tuesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "wednesday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "thursday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "friday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       },
+                       "saturday":{
+                          "open":"8:00am",
+                          "close":"12:00am"
+                       }
+                    }
                 }
             ]
         },

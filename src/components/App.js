@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import get from 'lodash.get';
 import { locate, receiveLocation, requestLocation } from '../actions';
-import getLocation from '../fetch';
 import data from '../fetch/locObj'
 import logo from '../assets/logo.png';
 import ListingCards from './listing_cards';
