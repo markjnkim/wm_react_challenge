@@ -1,22 +1,26 @@
 import React from "react";
 import Avatar from "../avatar";
-import styled from "styled-components";
 import get from "lodash.get";
-
-const CardWrapper = styled.div`
-  width: 100%;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-`;
+import {
+  DIV1,
+  DIV2,
+  DIV3,
+  DivWrapper,
+  CardWrapper,
+  AvatarWrapper,
+} from "../styles"
 
 const ListingCard = ({ listing }) => (
   <CardWrapper>
+    <AvatarWrapper>
     <Avatar img={`${get(listing, "avatar_image.small_url")}`} />
-    <div> {listing.name} </div>
-    <div> {listing.city} </div>
-    <div> {listing.rating} </div>
+    </AvatarWrapper>
+    <DivWrapper>
+      <DIV2> {listing.city} </DIV2>
+      <DIV1> {listing.name} </DIV1>
+      <DIV3> {listing.rating} </DIV3>
+    </DivWrapper>
+
   </CardWrapper>
 );
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import get from 'lodash.get';
-import { locate } from '../actions';
+import { locate, receiveLocation, requestLocation } from '../actions';
 import getLocation from '../fetch';
 import data from '../fetch/locObj'
 import logo from '../assets/logo.png';
@@ -19,13 +19,14 @@ import {
   LocationSection,
   TextContent,
   LocateButton,
+  CardStyle,
 } from './styles';
 
 const regionTypes = ['delivery', 'dispensary', 'doctor'];
 const regionLabels = {
-  delivery: 'Deliveries',
-  dispensary: 'Dispensaries',
-  doctor: 'Doctors',
+  delivery: '🚘  Delivery Services',
+  dispensary: '🌲 Dispensary Storefronts',
+  doctor: '⚕️ Doctors',
 };
 
 export class App extends Component {
@@ -49,9 +50,9 @@ export class App extends Component {
   locateMe() {
     alert(`${JSON.stringify(data.data.location)}`)
     console.log(data.data.regions);
-    
+
   }
-  
+
   render() {
     const { isLocating, location, regions, error } = data.data;
     const getLabel = (listings, label) => {
@@ -99,9 +100,11 @@ export class App extends Component {
                   <h2>
                     {getLabel(regions[regionType], regionLabels[regionType])}
                   </h2>
-                  <ListingCards
-                    listings={get(regions[regionType], 'listings')}
-                  />
+                  <CardStyle>
+                    <ListingCards
+                      listings={get(regions[regionType], 'listings')}
+                    />
+                  </CardStyle>
                 </ListingGroups>
               ))}
             </React.Fragment>
@@ -114,7 +117,7 @@ export class App extends Component {
 
 const mapStateToProps = (state) => {
   console.log(state);
-  return state.location
+  return { location: state.location }
 };
 
 App.propTypes = {
@@ -132,4 +135,4 @@ App.defaultProps = {
   error: {},
 };
 
-export default connect(mapStateToProps)(App);
+export default connect(mapStateToProps, { receiveLocation, requestLocation })(App);
