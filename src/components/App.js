@@ -24,7 +24,6 @@ import {
   LocateButton,
   CardStyle,
 } from './styles';
-// import { bindActionCreators } from '../../../../../Library/Caches/typescript/3.4/node_modules/redux';
 
 const regionTypes = ['delivery', 'dispensary', 'doctor'];
 const regionLabels = {
@@ -43,6 +42,7 @@ export class App extends Component {
   }
   componentDidMount() {
     // this.props.requestLectures(this.props.isLoading);
+
     console.log("CDM: ", this);
   }
   locateMe() {
@@ -53,12 +53,11 @@ export class App extends Component {
       });
     }
   };
-  // locateMe() {
-  //   alert(this);
-  //   console.log(this);
-  // }
+
   render() {
     const { isLocating, location, regions, error } = data.data;
+    console.log("Props Location: ", location)
+    
     const getLabel = (listings, label) => {
       if (get(listings, 'listings').length) {
         return (
@@ -113,6 +112,7 @@ export class App extends Component {
               ))}
             </React.Fragment>
           )}
+          {/* } */}
         </AppContent>
       </AppWrapper>
     );
@@ -121,12 +121,9 @@ export class App extends Component {
 
 const mapStateToProps = (state) => {
   console.log("MSTP :", state);
-  return { location: state.locationListing };
+  return { location: state.location };
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return { actions: bindActionCreators(receiveLocation, requestLocation, dispatch) }
-}
 
 App.propTypes = {
   isLocating: PropTypes.bool.isRequired,
@@ -143,4 +140,4 @@ App.defaultProps = {
   error: {},
 };
 
-export default connect(mapStateToProps, { receiveLocation, requestLocation })(App);
+export default connect(mapStateToProps)(App);

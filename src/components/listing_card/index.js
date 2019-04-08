@@ -19,7 +19,7 @@ import {
 } from "../styles";
 
 const ListingCard = ({ listing, history }) => (
-  <CardWrapper onClick={()=>this.props.selectList()}>
+  <CardWrapper onClick={()=>selectList}>
     <AvatarWrapper>
       <Avatar img={`${get(listing, "avatar_image.small_url")}`} />
     </AvatarWrapper>
@@ -36,7 +36,7 @@ const ListingCard = ({ listing, history }) => (
 );
 
 const mapStateToProps = state => {
-  console.log( "STATE-CARD: ", state);
+  console.log( "MSTP LC: ", state);
   return { list: state.list };
 };
 

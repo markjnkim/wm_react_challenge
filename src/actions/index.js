@@ -36,7 +36,6 @@ export const locate = coords => async (dispatch) => {
     dispatch(requestLocation(coords));
     const response = await fetch(url, options);
     const data = await response.json();
-    // return data;
     dispatch(receiveLocation(coords, data));
   } catch (e) {
     dispatch(error(e));
