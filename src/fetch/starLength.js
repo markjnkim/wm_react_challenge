@@ -1,38 +1,5 @@
 import get from "lodash.get";
 
-export const star = (rating) => {
-  const ratingFixed = rating.toFixed(1);
-  const [int, dec] = ratingFixed.split(".");
-  let starRating;
-  switch (parseInt(int)) {
-    case 5:
-      starRating = "⭐⭐⭐⭐⭐"
-      
-      break;
-    case 4:
-      starRating = "⭐⭐⭐⭐☆";
-      if (dec > 5){
-        // starRating.splice(4, )
-      }
-      break;
-    case 3:
-      starRating = "⭐⭐⭐☆☆";
-
-      break;
-    case 2:
-      starRating = "⭐⭐☆☆☆";
-
-      break;
-    case 1:
-      starRating = "⭐☆☆☆☆";
-
-      break;
-    default:
-      starRating = "☆☆☆☆☆"
-  }
-  return starRating;
-}
-
 export const convertMilTime = (hoursSec) => {
   const hours = parseInt(hoursSec.split(":")[0]);
   const isBeforeNoon = hoursSec.includes("am");
