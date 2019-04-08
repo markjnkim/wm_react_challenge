@@ -1,22 +1,32 @@
 import React from "react";
 import Avatar from "../avatar";
-import styled from "styled-components";
 import get from "lodash.get";
-
-const CardWrapper = styled.div`
-  width: 100%;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-`;
+import { starWidth, isOpen } from "../../fetch/starLength"
+import StarRating from "../star_rating";
+import {
+  DIV1,
+  DIV2,
+  DIV3,
+  SPAN,
+  DivWrapper,
+  CardWrapper,
+  AvatarWrapper,
+} from "../styles"
 
 const ListingCard = ({ listing }) => (
   <CardWrapper>
-    <Avatar img={`${get(listing, "avatar_image.small_url")}`} />
-    <div> {listing.name} </div>
-    <div> {listing.city} </div>
-    <div> {listing.rating} </div>
+    <AvatarWrapper>
+      <Avatar img={`${get(listing, "avatar_image.small_url")}`} />
+    </AvatarWrapper>
+    <DivWrapper>
+      <DIV2> {listing.city}, {listing.state} | {Math.floor(listing.distance)}mi <SPAN>{isOpen(listing, new Date())}</SPAN></DIV2>
+      <DIV1> {listing.name} </DIV1>
+      <DIV3> 
+      <StarRating width={starWidth(listing.rating)}/>
+        <SPAN>{listing.rating.toFixed(1)}</SPAN>
+       </DIV3>
+    </DivWrapper>
+
   </CardWrapper>
 );
 

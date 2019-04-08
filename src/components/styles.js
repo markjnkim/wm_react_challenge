@@ -18,6 +18,7 @@ export const AppHeader = styled.div`
 export const AppWrapper = styled.div`
   margin-bottom: 20px;
   text-align: center;
+  background-color: #EAEAEA;
 `;
 
 export const AppContent = styled.div`
@@ -96,4 +97,52 @@ export const LocateButton = styled.a`
   svg {
     margin-right: 5px;
   }
+`;
+
+export const CardStyle = styled.div`
+  margin: 4px;
+  padding: 3px;
+`;
+
+export const DIV1 = styled.div`
+  margin: 4px;
+  padding: 3px;
+  text-align: left;
+`;
+
+export const DIV2 = styled.div`
+  margin: 4px;
+  padding: 3px;
+  color: grey;
+  font-size: 14px;
+`;
+
+export const DIV3 = styled.div`
+  margin: 4px;
+  padding: 3px;
+`;
+
+export const DivWrapper = styled.div`
+  margin: 4px;
+  padding: 3px;
+`;
+
+export const CardWrapper = styled.div`
+  width: 80%;
+  height: 70%;
+  display: flex;
+  text-align: left;
+  margin-top: 20px;
+  padding: 2%;
+  background-color: white;
+  border-radius: 6px;
+`;
+
+export const AvatarWrapper = styled.div`
+  vertical-align: bottom;
+  padding-top: 3%;
+`;
+
+export const SPAN = styled.span`
+  color: green;
 `;

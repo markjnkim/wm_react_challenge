@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import get from 'lodash.get';
-import { locate } from '../actions';
+import { locate, receiveLocation, requestLocation } from '../actions';
+import data from '../fetch/locObj'
 import logo from '../assets/logo.png';
 import ListingCards from './listing_cards';
 import Locate from '../icons/locate';
@@ -17,36 +18,44 @@ import {
   LocationSection,
   TextContent,
   LocateButton,
+  CardStyle,
 } from './styles';
 
 const regionTypes = ['delivery', 'dispensary', 'doctor'];
 const regionLabels = {
-  delivery: 'Deliveries',
-  dispensary: 'Dispensaries',
-  doctor: 'Doctors',
+  delivery: '🚘  Delivery Services',
+  dispensary: '🌲 Dispensary Storefronts',
+  doctor: '⚕️ Doctors',
 };
 
 export class App extends Component {
   constructor(props) {
-    super();
+    super(props);
     this.state = {
       loadingTimer: 0,
     };
   }
+  componentDidMount(){
+    // this.props.requestLectures(this.props.isLoading);
+     console.log(this.props);
+   }
+
+  // locateMe() {
+  //   const { dispatch } = this.props;
+  //   if (navigator.geolocation) {
+  //     navigator.geolocation.getCurrentPosition(position => {
+  //       dispatch(locate(position.coords));
+  //     });
+  //   }
+  // };
 
   locateMe() {
-    const { dispatch } = this.props;
-
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(position => {
-        dispatch(locate(position.coords));
-      });
-    }
-  };
+    alert(this)
+    console.log(this);
+  }
 
   render() {
-    const { isLocating, location, regions, error } = this.props;
-
+    const { isLocating, location, regions, error } = data.data;
     const getLabel = (listings, label) => {
       if (get(listings, 'listings').length) {
         return (
@@ -92,9 +101,11 @@ export class App extends Component {
                   <h2>
                     {getLabel(regions[regionType], regionLabels[regionType])}
                   </h2>
-                  <ListingCards
-                    listings={get(regions[regionType], 'listings')}
-                  />
+                  <CardStyle>
+                    <ListingCards
+                      listings={get(regions[regionType], 'listings')}
+                    />
+                  </CardStyle>
                 </ListingGroups>
               ))}
             </React.Fragment>
@@ -105,7 +116,7 @@ export class App extends Component {
   }
 }
 
-const mapStateToProps = state => state.location;
+const mapStateToProps = (state) => state.location;
 
 App.propTypes = {
   isLocating: PropTypes.bool.isRequired,
@@ -122,4 +133,4 @@ App.defaultProps = {
   error: {},
 };
 
-export default connect(mapStateToProps)(App);
+export default connect(mapStateToProps, { receiveLocation, requestLocation })(App);

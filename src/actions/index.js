@@ -5,11 +5,12 @@ export const requestLocation = coords => ({
   type: types.REQUEST,
   coords,
 });
-
+//action creator 
 export const receiveLocation = (coords, json) => ({
   type: types.RECEIVE,
   location: json.data.location,
   regions: json.data.regions,
+  
 });
 
 export const error = e => ({
@@ -36,8 +37,10 @@ export const locate = coords => async (dispatch) => {
     dispatch(requestLocation(coords));
     const response = await fetch(url, options);
     const data = await response.json();
+    return data;
     dispatch(receiveLocation(coords, data));
   } catch (e) {
     dispatch(error(e));
+    console.log(e)
   }
 };
