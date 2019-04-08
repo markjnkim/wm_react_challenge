@@ -136,6 +136,11 @@ export const CardWrapper = styled.div`
   padding: 2%;
   background-color: white;
   border-radius: 6px;
+
+  @media (max-width: 700px) {
+    background: palevioletred;
+    width: 100%;
+  }
 `;
 
 export const AvatarWrapper = styled.div`
