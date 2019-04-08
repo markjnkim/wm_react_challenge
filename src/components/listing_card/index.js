@@ -1,7 +1,7 @@
 import React from "react";
 import Avatar from "../avatar";
 import get from "lodash.get";
-import { star, starWidth, isOpen } from "../../fetch/starLength"
+import { starWidth, isOpen } from "../../fetch/starLength"
 import StarRating from "../star_rating";
 import {
   DIV1,
@@ -22,7 +22,6 @@ const ListingCard = ({ listing }) => (
       <DIV2> {listing.city}, {listing.state} | {Math.floor(listing.distance)}mi <SPAN>{isOpen(listing, new Date())}</SPAN></DIV2>
       <DIV1> {listing.name} </DIV1>
       <DIV3> 
-      {/* {star(listing.rating)} */}
       <StarRating width={starWidth(listing.rating)}/>
         <SPAN>{listing.rating.toFixed(1)}</SPAN>
        </DIV3>

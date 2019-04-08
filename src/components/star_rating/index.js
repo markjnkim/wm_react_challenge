@@ -6,7 +6,7 @@ const StarWrapper = styled.div`
   display: inline-block;
   position: relative;
 
-  ${StarWrapper}::before { 
+  &::before { 
     content: "☆☆☆☆☆";
     color: green;
   }
@@ -18,18 +18,17 @@ const StarInner = styled.div`
   left: 0;
   white-space: nowrap;
   overflow: hidden;
-  width: 50%;
+  width: ${props => props.width};
 
-  ${StarInner}::before {
+  &::before {
     content: "★★★★★";
     color: green;
   }
 `;
 
-const StarRating = () => (
+const StarRating = ({width}) => (
     <StarWrapper>
-        <StarInner width="100">
-        </StarInner>
+        <StarInner width={width} />
     </StarWrapper>
 );
 StarRating.propTypes = {
