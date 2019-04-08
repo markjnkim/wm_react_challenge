@@ -7,10 +7,11 @@ import configureStore from './store/configureStore';
 
 const GlobalStyle = createGlobalStyle`
   body {
+    position: relative;
     margin: 0;
     padding: 0;
-    min-width: 320px;
     font-family: sans-serif;
+    min-width: 490px !important;
   }
 `;
 

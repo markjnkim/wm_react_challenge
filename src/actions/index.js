@@ -5,7 +5,7 @@ export const requestLocation = coords => ({
   type: types.REQUEST,
   coords,
 });
-//action creator 
+
 export const receiveLocation = (coords, json) => ({
   type: types.RECEIVE,
   location: json.data.location,

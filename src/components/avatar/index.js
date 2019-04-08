@@ -7,6 +7,16 @@ const ImgWrapper = styled.div`
     width: ${props => props.width};
     height: ${props => props.height};
     object-fit: cover;
+    padding: 3%;
+    margin: 3%;
+    @media (max-width: 700px) {
+      position: absolute;
+      right: 15%;
+      padding: 3% 0px;
+      margin: 0px;
+
+
+    }
   }
 `;
 
