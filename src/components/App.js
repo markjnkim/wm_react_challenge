@@ -2,12 +2,16 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import get from 'lodash.get';
+import { bindActionCreators } from 'redux';
 import { locate, receiveLocation, requestLocation } from '../actions';
 import data from '../fetch/locObj'
 import logo from '../assets/logo.png';
 import ListingCards from './listing_cards';
 import Locate from '../icons/locate';
 import MapPin from '../icons/map-pin';
+import Delivery from '../icons/delivery';
+import Dispensary from '../icons/dispensary';
+import Doctor from '../icons/doctor';
 import {
   AppHeader,
   AppWrapper,
@@ -20,40 +24,39 @@ import {
   LocateButton,
   CardStyle,
 } from './styles';
+// import { bindActionCreators } from '../../../../../Library/Caches/typescript/3.4/node_modules/redux';
 
 const regionTypes = ['delivery', 'dispensary', 'doctor'];
 const regionLabels = {
-  delivery: '🚘  Delivery Services',
-  dispensary: '🌲 Dispensary Storefronts',
-  doctor: '⚕️ Doctors',
+  delivery: <span><Delivery fill={'#7e7979'} width={'40px'} height={'25px'} />  Delivery Services</span>,
+  dispensary: <span><Dispensary fill={'#7e7979'} width={'40px'} height={'25px'} />  Dispensary Storefronts </span>,
+  doctor: <span><Doctor fill={'#7e7979'} width={'40px'} height={'25px'} />  Doctors</span>,
 };
 
 export class App extends Component {
   constructor(props) {
     super(props);
+    console.log("Constructor: ", this.props)
     this.state = {
       loadingTimer: 0,
     };
   }
-  componentDidMount(){
+  componentDidMount() {
     // this.props.requestLectures(this.props.isLoading);
-     console.log(this.props);
-   }
-
-  // locateMe() {
-  //   const { dispatch } = this.props;
-  //   if (navigator.geolocation) {
-  //     navigator.geolocation.getCurrentPosition(position => {
-  //       dispatch(locate(position.coords));
-  //     });
-  //   }
-  // };
-
-  locateMe() {
-    alert(this)
-    console.log(this);
+    console.log("CDM: ", this);
   }
-
+  locateMe() {
+  const { dispatch } = this.props;
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(position => {
+        dispatch(locate(position.coords));
+      });
+    }
+  };
+  // locateMe() {
+  //   alert(this);
+  //   console.log(this);
+  // }
   render() {
     const { isLocating, location, regions, error } = data.data;
     const getLabel = (listings, label) => {
@@ -80,7 +83,7 @@ export class App extends Component {
                 <span> {location ? location.name : ''} </span>
                 <span> {isLocating && !location ? '...locating' : ''} </span>
               </h2>
-              <LocateButton onClick={this.locateMe}>
+              <LocateButton onClick={this.locateMe.bind(this)}>
                 <Locate fill={'#7e7979'} />
                 <span> Locate Me </span>
               </LocateButton>
@@ -116,7 +119,14 @@ export class App extends Component {
   }
 }
 
-const mapStateToProps = (state) => state.location;
+const mapStateToProps = (state) => {
+  console.log("MSTP :", state);
+  return { location: state.locationListing };
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return { actions: bindActionCreators(receiveLocation, requestLocation, dispatch) }
+}
 
 App.propTypes = {
   isLocating: PropTypes.bool.isRequired,

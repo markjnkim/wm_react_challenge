@@ -1,8 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
-import Avatar from "../avatar";
+import { BrowserRouter as Router } from "react-router-dom";
 import get from "lodash.get";
-import { starWidth, isOpen } from "../../fetch/starLength"
+import Avatar from "../avatar";
+import { starWidth, isOpen } from "../../fetch/starLength";
 import StarRating from "../star_rating";
 import { selectList } from "../../actions";
 import {
@@ -15,10 +16,10 @@ import {
   DivWrapper,
   CardWrapper,
   AvatarWrapper,
-} from "../styles"
+} from "../styles";
 
-const ListingCard = ({ listing }) => (
-  <CardWrapper onClick={()=>selectList()}>
+const ListingCard = ({ listing, history }) => (
+  <CardWrapper onClick={()=>this.props.selectList()}>
     <AvatarWrapper>
       <Avatar img={`${get(listing, "avatar_image.small_url")}`} />
     </AvatarWrapper>
