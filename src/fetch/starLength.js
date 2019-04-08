@@ -12,7 +12,7 @@ export const star = (rating) => {
     case 4:
       starRating = "⭐⭐⭐⭐☆";
       if (dec > 5){
-        starRating.splice(4, )
+        // starRating.splice(4, )
       }
       break;
     case 3:
@@ -32,6 +32,7 @@ export const star = (rating) => {
   }
   return starRating;
 }
+
 export const convertMilTime = (hoursSec) => {
   const hours = parseInt(hoursSec.split(":")[0]);
   const isBeforeNoon = hoursSec.includes("am");
@@ -43,10 +44,12 @@ export const convertMilTime = (hoursSec) => {
   }
   return hours + 12;
 }
+
 export const operation = (listing, day, action) => {
   return get(listing, `business_hours.${day}.${action}`);
 
 }
+
 export const isOpen = (listing, today) => {
   const day = today.getDay();
   const hours = today.getHours();
@@ -112,4 +115,9 @@ export const isOpen = (listing, today) => {
     default:
       return "CLOSED";
   }
+}
+
+export const starWidth = (width) => {
+  const percent = width/5*100;
+  return `${percent}%`;
 }

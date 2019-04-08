@@ -146,27 +146,3 @@ export const AvatarWrapper = styled.div`
 export const SPAN = styled.span`
   color: green;
 `;
-
-export const StarWrapper = styled.div`
-  display: inline-block;
-  position: relative;
-  font-family: FontAwesome;
-
-  ${StarWrapper}::before { 
-    content: "\f006 \f006 \f006 \f006 \f006";
-  }
-`;
-
-export const StarInner = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-
-  ${StarInner}::before {
-    content: "\f005 \f005 \f005 \f005 \f005";  
-    color: #36f80b 
-  }
-`;

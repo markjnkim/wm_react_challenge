@@ -1,28 +1,34 @@
 import React from "react";
-import {
-    StarWrapper,
-    StarInner,
-} from "../styles"
+import PropTypes from "prop-types";
+import styled from "styled-components";
+
+const StarWrapper = styled.div`
+  display: inline-block;
+  position: relative;
+
+  ${StarWrapper}::before { 
+    content: "☆☆☆☆☆";
+    color: green;
+  }
+`;
 
 const StarInner = styled.div`
-    position: absolute;
-    top: 0;
-    left: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    width: ${props => props.width};
-    font-family: FontAwesome;
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 50%;
 
-${StarInner}::before {
-  content: "\f005 \f005 \f005 \f005 \f005";  
-  color: #36f80b 
-}
-`
+  ${StarInner}::before {
+    content: "★★★★★";
+    color: green;
+  }
+`;
 
-const StarRating = ({ width }) => (
+const StarRating = () => (
     <StarWrapper>
-        <StarInner width={width}>
-
+        <StarInner width="100">
         </StarInner>
     </StarWrapper>
 );
