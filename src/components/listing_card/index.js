@@ -1,8 +1,10 @@
 import React from "react";
+import { connect } from "react-redux";
 import Avatar from "../avatar";
 import get from "lodash.get";
 import { starWidth, isOpen } from "../../fetch/starLength"
 import StarRating from "../star_rating";
+import { selectList } from "../../actions";
 import {
   DIV1,
   DIV2,
@@ -16,7 +18,7 @@ import {
 } from "../styles"
 
 const ListingCard = ({ listing }) => (
-  <CardWrapper>
+  <CardWrapper onClick={()=>selectList()}>
     <AvatarWrapper>
       <Avatar img={`${get(listing, "avatar_image.small_url")}`} />
     </AvatarWrapper>
@@ -29,8 +31,13 @@ const ListingCard = ({ listing }) => (
        </DIV3>
        <DIVO>{isOpen(listing, new Date())}</DIVO>
     </DivWrapper>
-
   </CardWrapper>
 );
 
-export default ListingCard;
+const mapStateToProps = state => {
+  console.log( "STATE-CARD: ", state);
+  return { list: state.list };
+};
+
+// export default ListingCard;
+export default connect(mapStateToProps, { selectList })(ListingCard);
