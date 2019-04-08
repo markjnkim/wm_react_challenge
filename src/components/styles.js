@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const AppHeader = styled.div`
   height: 70px;
   display: flex;
@@ -19,6 +20,7 @@ export const AppWrapper = styled.div`
   margin-bottom: 20px;
   text-align: center;
   background-color: #EAEAEA;
+  min-width: 550px !important;
 `;
 
 export const AppContent = styled.div`
@@ -105,9 +107,13 @@ export const CardStyle = styled.div`
 `;
 
 export const DIV1 = styled.div`
-  margin: 4px;
-  padding: 3px;
   text-align: left;
+  margin-left: 7px;
+  font-weight: bold;
+
+  @media (max-width: 600px) {
+    font-size: 12px !important;
+  }
 `;
 
 export const DIV2 = styled.div`
@@ -115,16 +121,26 @@ export const DIV2 = styled.div`
   padding: 3px;
   color: grey;
   font-size: 14px;
+
+  @media (max-width: 600px) {
+    font-size: 10px !important;
+  }
 `;
 
 export const DIV3 = styled.div`
   margin: 4px;
   padding: 3px;
+  color: grey;
 `;
 
 export const DivWrapper = styled.div`
   margin: 4px;
   padding: 3px;
+  order: 2;
+  @media (max-width: 700px) {
+    order: 1;
+    float: left;
+  }
 `;
 
 export const CardWrapper = styled.div`
@@ -133,21 +149,58 @@ export const CardWrapper = styled.div`
   display: flex;
   text-align: left;
   margin-top: 20px;
-  padding: 2%;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding: 0;
   background-color: white;
   border-radius: 6px;
 
   @media (max-width: 700px) {
-    background: palevioletred;
     width: 100%;
+  }
+  @media (max-width: 600px) {
+    width: 92%;
+  }
+  @media (max-width: 500px) {
+    width: 83%;
+
   }
 `;
 
 export const AvatarWrapper = styled.div`
   vertical-align: bottom;
-  padding-top: 3%;
+  padding: 1%;
+  order: 1;
+  @media (max-width: 500px) {
+    padding-bottom: 19px;
+  }
 `;
 
+export const SpanRating = styled.span`
+  color: grey;
+  padding-left: 5px;
+  font-size: 13px;
+  
+  @media (max-width: 700px) {
+    order: 2;
+  }
+`;
 export const SPAN = styled.span`
-  color: green;
+  color: #12C3A0;
+  @media (max-width: 700px) {
+    order: 3;
+    display: none;
+  }
+`;
+
+export const DIVO = styled.div`
+  color: #12C3A0;
+  display: none;
+  @media (max-width: 700px) {
+    order: 4;
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    font-size: 11px;
+  }
 `;

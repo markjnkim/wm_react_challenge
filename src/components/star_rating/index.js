@@ -10,7 +10,12 @@ const StarWrapper = styled.div`
     content: "☆☆☆☆☆";
     color: green;
   }
+  
+  @media (max-width: 700px) {
+    order: ; 2;
+  }
 `;
+
 
 const StarInner = styled.div`
   position: absolute;
