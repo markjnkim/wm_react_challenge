@@ -7,8 +7,8 @@ const StarWrapper = styled.div`
   position: relative;
 
   &::before { 
-    content: "☆☆☆☆☆";
-    color: green;
+    content: "★★★★★";
+    color: grey;
   }
   
   @media (max-width: 700px) {
@@ -27,7 +27,7 @@ const StarInner = styled.div`
 
   &::before {
     content: "★★★★★";
-    color: green;
+    color: #12C3A0;
   }
 `;
 
