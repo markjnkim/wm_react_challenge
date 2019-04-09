@@ -9,13 +9,19 @@ const ImgWrapper = styled.div`
     object-fit: cover;
     padding: 3%;
     margin: 3%;
+    // position: relative;
+
     @media (max-width: 700px) {
       position: absolute;
       right: 15%;
       padding: 3% 0px;
       margin: 0px;
-
-
+    }
+    @media (max-width: 500px) {
+      position: absolute;
+      right: 10%;
+      padding: 3% 0px;
+      margin: 0px;
     }
   }
 `;

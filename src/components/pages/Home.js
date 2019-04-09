@@ -22,13 +22,14 @@ import {
   TextContent,
   LocateButton,
   CardStyle,
+  Icon
 } from '../styles';
 
 const regionTypes = ['delivery', 'dispensary', 'doctor'];
 const regionLabels = {
-  delivery: <span><Delivery fill={'#7e7979'} width={'40px'} height={'25px'} />  Delivery Services</span>,
-  dispensary: <span><Dispensary fill={'#7e7979'} width={'40px'} height={'25px'} />  Dispensary Storefronts </span>,
-  doctor: <span><Doctor fill={'#7e7979'} width={'40px'} height={'25px'} />  Doctors</span>,
+  delivery: <span><Icon><Delivery fill={'#7e7979'} width={'40px'} height={'25px'} /> </Icon>Delivery Services</span>,
+  dispensary: <span><Icon><Dispensary fill={'#7e7979'} width={'40px'} height={'25px'} /> </Icon> Dispensary Storefronts </span>,
+  doctor: <span><Icon><Doctor fill={'#7e7979'} width={'40px'} height={'25px'} /> </Icon> Doctors</span>,
 };
 
 export class App extends Component {

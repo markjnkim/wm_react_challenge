@@ -23,6 +23,15 @@ export const AppWrapper = styled.div`
   min-width: 450px !important;
 `;
 
+export const Icon = styled.div`
+  // padding-top: 40px;
+  // margin-top: 10px;
+  display: inline-block;
+  // align: bottom;
+  position: absolute:
+  bottom: 0px;
+`;
+
 export const AppContent = styled.div`
   width: 90%;
   max-width: 1200px;
@@ -102,8 +111,12 @@ export const LocateButton = styled.a`
 `;
 
 export const CardStyle = styled.div`
-  margin: 4px;
-  padding: 3px;
+  // margin: 4px;
+  // padding: 3px;
+
+  @media (max-width: 600px) {
+    text-align: center;
+  }
 `;
 
 export const DIV1 = styled.div`
@@ -159,12 +172,12 @@ export const CardWrapper = styled.div`
   @media (max-width: 700px) {
     width: 100%;
   }
-  @media (max-width: 600px) {
-    width: 92%;
-  }
-  @media (max-width: 500px) {
-    width: 83%;
-  }
+  // @media (max-width: 600px) {
+  //   width: 92%;
+  // }
+  // @media (max-width: 500px) {
+  //   width: 99%;
+  // }
 `;
 
 export const AvatarWrapper = styled.div`
