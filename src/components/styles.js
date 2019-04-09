@@ -154,6 +154,7 @@ export const CardWrapper = styled.div`
   padding: 0;
   background-color: white;
   border-radius: 6px;
+  cursor: pointer;
 
   @media (max-width: 700px) {
     width: 100%;
@@ -163,7 +164,6 @@ export const CardWrapper = styled.div`
   }
   @media (max-width: 500px) {
     width: 83%;
-
   }
 `;
 
