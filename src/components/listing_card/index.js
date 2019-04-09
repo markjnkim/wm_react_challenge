@@ -37,7 +37,7 @@ const ListingCard = ({ listing, history }) => (
 
 const mapStateToProps = state => {
   console.log( "MSTP LC: ", state);
-  return { list: state.list };
+  return { selectedDetail: state.selectedDetail };
 };
 
 // export default ListingCard;
