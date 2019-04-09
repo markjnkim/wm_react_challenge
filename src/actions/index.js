@@ -39,14 +39,23 @@ export const locate = coords => async (dispatch) => {
     dispatch(receiveLocation(coords, data));
   } catch (e) {
     dispatch(error(e));
-    console.log(e)
+    // console.log(e);
   }
 };
 
-export const selectList = list => {
-  // Return an action
+export const selectList = detail => {
   return {
-    type: types.LIST_SELECTED,
-    payload: list,
+    type: types.DETAIL_SELECTED,
+    payload: detail,
   };
 }; 
+
+// export const toDetail = detail => {
+
+//   try {
+//     dispatch(selectList(detail));
+//     props.history.push('/detail');
+//   } catch(e) {
+//     dispatch(error(e));
+//   }
+// };

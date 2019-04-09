@@ -20,7 +20,6 @@ export const operation = (listing, day, action) => {
 export const isOpen = (listing, today) => {
   const day = today.getDay();
   const hours = today.getHours();
-  const mins = today.getMinutes();
   switch (day) {
     case 0:
       const sundayOpen = operation(listing, 'sunday', 'open');

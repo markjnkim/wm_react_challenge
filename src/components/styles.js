@@ -20,7 +20,16 @@ export const AppWrapper = styled.div`
   margin-bottom: 20px;
   text-align: center;
   background-color: #EAEAEA;
-  min-width: 550px !important;
+  min-width: 450px !important;
+`;
+
+export const Icon = styled.div`
+  // padding-top: 40px;
+  // margin-top: 10px;
+  display: inline-block;
+  // align: bottom;
+  position: absolute:
+  bottom: 0px;
 `;
 
 export const AppContent = styled.div`
@@ -102,8 +111,12 @@ export const LocateButton = styled.a`
 `;
 
 export const CardStyle = styled.div`
-  margin: 4px;
-  padding: 3px;
+  // margin: 4px;
+  // padding: 3px;
+
+  @media (max-width: 600px) {
+    text-align: center;
+  }
 `;
 
 export const DIV1 = styled.div`
@@ -154,17 +167,17 @@ export const CardWrapper = styled.div`
   padding: 0;
   background-color: white;
   border-radius: 6px;
+  cursor: pointer;
 
   @media (max-width: 700px) {
     width: 100%;
   }
-  @media (max-width: 600px) {
-    width: 92%;
-  }
-  @media (max-width: 500px) {
-    width: 83%;
-
-  }
+  // @media (max-width: 600px) {
+  //   width: 92%;
+  // }
+  // @media (max-width: 500px) {
+  //   width: 99%;
+  // }
 `;
 
 export const AvatarWrapper = styled.div`
@@ -203,4 +216,50 @@ export const DIVO = styled.div`
     padding-left: 10px;
     font-size: 11px;
   }
+`;
+
+export const DetailHeader = styled.div`
+  height: 230px;
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: #fff;
+  clearfix: auto;
+
+  img {
+    width: 210px;
+    height: 225px;
+  }
+`;
+
+export const DIVNAME = styled.div`
+text-align: left;
+margin-left: 7px;
+font-weight: bold;
+font-size: 3vw;
+
+@media (max-width: 600px) {
+  font-size: 12px !important;
+}
+`;
+
+export const SpanRatingDetail = styled.span`
+  color: #12C3A0;
+  padding-left: 5px;
+  font-size: 3vw;
+  
+  @media (max-width: 700px) {
+    order: 2;
+  }
+`;
+
+export const AppWrapperDetail = styled.div`
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #EAEAEA;
+  min-width: 450px !important;
+  height: 100%;
+  min-height: 600px;
 `;
