@@ -43,10 +43,9 @@ export const locate = coords => async (dispatch) => {
   }
 };
 
-export const selectList = list => {
-  // Return an action
+export const selectList = detail => {
   return {
-    type: types.LIST_SELECTED,
-    payload: list,
+    type: types.DETAIL_SELECTED,
+    payload: detail,
   };
 }; 
