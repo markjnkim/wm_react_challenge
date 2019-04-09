@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import get from 'lodash.get';
 import { locate } from '../../actions';
-import data from '../../fetch/locObj'
+import response from '../../helper/locObj'
 import logo from '../../assets/logo.png';
 import ListingCards from '../listing_cards';
 import Locate from '../../icons/locate';
@@ -34,16 +34,16 @@ const regionLabels = {
 export class App extends Component {
   constructor(props) {
     super(props);
-    console.log("Constructor: ", this.props)
+    // console.log("Constructor: ", this.props)
     this.state = {
       loadingTimer: 0,
     };
   }
-  componentDidMount() {
-    // this.props.requestLectures(this.props.isLoading);
+  // componentDidMount() {
+  //   // this.props.requestLectures(this.props.isLoading);
 
-    console.log("CDM: ", this);
-  }
+  //   console.log("CDM: ", this);
+  // }
   locateMe() {
   const { dispatch } = this.props;
   if (navigator.geolocation) {
@@ -54,8 +54,8 @@ export class App extends Component {
   };
 
   render() {
-    const { isLocating, location, regions, error } = data.data;
-    console.log("Props Location: ", location)
+    const { isLocating, location, regions, error } = response.data;
+    // console.log("Props Location: ", location)
     
     const getLabel = (listings, label) => {
       if (get(listings, 'listings').length) {
@@ -111,7 +111,6 @@ export class App extends Component {
               ))}
             </React.Fragment>
           )}
-          {/* } */}
         </AppContent>
       </AppWrapper>
     );
@@ -119,10 +118,9 @@ export class App extends Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log("MSTP :", state);
+  console.log("MSTP APP :", state);
   return { location: state.location };
 }
-
 
 App.propTypes = {
   isLocating: PropTypes.bool.isRequired,

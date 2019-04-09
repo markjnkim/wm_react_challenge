@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
-import ListDetail from "./listing_detail";
+import ListingDetail from "./listing_detail";
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
       <div>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/detail" component={Detail} />
-          <Route exact path="/list-detail" component={ListDetail} />
+          <Route exact path="/list-detail" component={Detail} />
+          <Route exact path="/detail" component={ListingDetail} />
           <Route component={NoMatch} />
         </Switch>
       </div>
