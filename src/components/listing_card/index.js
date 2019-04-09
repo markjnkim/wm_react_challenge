@@ -36,7 +36,7 @@ const ListingCard = ({ listing, history }) => (
 );
 
 const mapStateToProps = state => {
-  console.log( "MSTP LC: ", state);
+  // console.log( "MSTP LC: ", state);
   return { selectedDetail: state.selectedDetail };
 };
 

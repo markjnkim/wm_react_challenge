@@ -1,8 +1,8 @@
-import { LIST_SELECTED } from '../constants/ActionTypes';
+import { DETAIL_SELECTED } from '../constants/ActionTypes';
 
 const listingDetail = (state = { selectedListing: null }, action) => {
   switch (action.type) {
-    case LIST_SELECTED:
+    case DETAIL_SELECTED:
       return {
         ...state,
         selectedListing: action.payload,
