@@ -173,10 +173,6 @@ export const CardWrapper = styled.div`
 
   @media (max-width: 700px) {
     width: 100%;
-          width: 90%;
-      margin: 0px;
-      position: absolute;
-      left: 5px;
   }
   // @media (max-width: 600px) {
   //   width: 92%;
