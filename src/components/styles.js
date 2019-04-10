@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const AppHeader = styled.div`
   height: 70px;
   display: flex;
-  padding: 0 20px;
+  padding: 0 0px;
   justify-content: space-between;
   align-items: center;
   background-color: #222;
@@ -45,7 +45,16 @@ export const ListingGroups = styled.div`
   h2 {
     text-align: left;
   }
+  padding-left: 20%;
+  margin: auto;
+
+  @media (max-width: 700px) {
+    padding: 0px;
+  }
+
+
 `;
+
 
 export const HeroSection = styled.div`
   background-color: white;
@@ -251,13 +260,13 @@ margin-left: 7px;
 font-weight: bold;
 font-size: 3vw;
 order: 1;
-// border: solid 3px red;
+
+position: absolute;
 
 @media (max-width: 600px) {
-  font-size: 12px !important;
-  order: 2;
-  float: left;
-  margin-right: 78px;
+  font-size: 16px !important;
+  position: absolute;
+  width: 70%
 }
 `;
 
@@ -269,6 +278,7 @@ export const SpanRatingDetail = styled.span`
   @media (max-width: 720px) {
     order: 2;
     padding-bottom: 8px;
+    font-size: 15px;
   }
 `;
 
@@ -280,7 +290,6 @@ export const AppWrapperDetail = styled.div`
   min-width: 450px !important;
   position: relative;
   min-height: 100vh;
-
 `;
 
 export const AvatarWrapperDetail = styled.div`
@@ -297,26 +306,22 @@ export const AvatarWrapperDetail = styled.div`
     order: 0;
     right: 140px;
     top: 65px;
-
   }
 `;
 
-
 export const CardWrapperDetail = styled.div`
-  // width: 80%;
-  // height: 300px;
-  // display: flex;
   text-align: left;
   padding-top: 25px;
+  margin-bottom: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
   margin-top: 20px;
-  margin-bottom: 50px;
-  margin-right: 20px;
-  margin: 10px 10%;
+  position: relative;
   background-color: white;
   border-radius: 6px;
   cursor: pointer;
   padding-bottom: 3.5rem;
-  min-height: 300px;
+  min-height: 250px;
   max-height: 200px;
 
 
@@ -324,18 +329,18 @@ export const CardWrapperDetail = styled.div`
     width: 75%;
     margin-left: 25px;
     position: relative;
-    // padding-bottom: 15px;
     margin-bottom: 35px;
   }
 `;
 
 export const DivWrapperDetail = styled.div`
   margin: 4px;
-  padding: 0 20%;
-  width: 100%;
-
-  clearfix: auto;
+  padding: 0;
+  width: 80%;
+  margin-bottom: 20px;
+  padding-left: 10%;
   order: 2;
+
   @media (max-width: 700px) {
     order: 1;
     float: left;
@@ -406,4 +411,23 @@ export const Stars = styled.div`
   padding-bottom: 15px;
   float: left:
   padding-left: 15px;
+`;
+
+export const Logo = styled.div`
+img {
+  height: 25px;
+  width: 100px;
+  display: block;
+  position: absolute;
+  bottom: 25px;
+  left: 5px;
+  margin-left: 30px;
+
+}
+
+@media (max-width: 700px) {
+  order: 3;
+  display: none;
+  border: red solid 3px;
+}
 `;

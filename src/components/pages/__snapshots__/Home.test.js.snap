@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home renders without crashing given the required props 1`] = `
+exports[`Shallow rendered Home renders without crashing given the required props 1`] = `
 <styled.div>
   <styled.div>
     <img
