@@ -179,6 +179,7 @@ export const CardWrapper = styled.div`
   background-color: white;
   border-radius: 6px;
   cursor: pointer;
+  box-shadow: 5px 5px 5px #D3D3D3;
 
   @media (max-width: 700px) {
     width: 100%;
