@@ -21,7 +21,7 @@ describe('actions', () => {
     });
   });
 
-  describe('recieve', () => {
+  describe('receive', () => {
     it('should create action for receiving locations', () => {
       const testAction = {
         type: types.RECEIVE,
@@ -38,7 +38,7 @@ describe('actions', () => {
       fetchMock.reset();
       fetchMock.restore();
     });
-    it('dispatches Recieve when fetch is complete', () => {
+    it('dispatches Receive when fetch is complete', () => {
       const store = mockStore();
       fetchMock.get(
         `https://${
