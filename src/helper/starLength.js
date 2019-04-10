@@ -24,7 +24,7 @@ export const isOpen = (listing, today) => {
     case 0:
       const sundayOpen = operation(listing, 'sunday', 'open');
       const sundayClosed = operation(listing, 'sunday', 'close')
-      if (hours > convertMilTime(sundayOpen) && hours < convertMilTime(sundayClosed)) {
+      if (hours > convertMilTime("8:00am") && hours < convertMilTime("12:00am")) {
         return 'OPEN NOW'
       }
       return 'CLOSED'
@@ -32,7 +32,7 @@ export const isOpen = (listing, today) => {
     case 1:
       const mondayOpen = operation(listing, 'monday', 'open');
       const mondayClosed = operation(listing, 'monday', 'close')
-      if (hours > convertMilTime(mondayOpen) && hours < convertMilTime(mondayClosed)) {
+      if (hours > convertMilTime("8:00am") && hours < convertMilTime("12:00am")) {
         return 'OPEN NOW'
       }
       return 'CLOSED'
@@ -40,7 +40,7 @@ export const isOpen = (listing, today) => {
     case 2:
       const tuesdayOpen = operation(listing, 'tuesday', 'open');
       const tuesdayClosed = operation(listing, 'tuesday', 'close')
-      if (hours > convertMilTime(tuesdayOpen) && hours < convertMilTime(tuesdayClosed)) {
+      if (hours > convertMilTime("8:00am") && hours < convertMilTime("12:00am")) {
         return 'OPEN NOW'
       }
       return 'CLOSED'
@@ -48,7 +48,7 @@ export const isOpen = (listing, today) => {
     case 3:
       const wednesdayOpen = operation(listing, 'wednesday', 'open');
       const wednesdayClosed = operation(listing, 'wednesday', 'close')
-      if (hours > convertMilTime(wednesdayOpen) && hours < convertMilTime(wednesdayClosed)) {
+      if (hours > convertMilTime("8:00am") && hours < convertMilTime("12:00am")) {
         return 'OPEN NOW'
       }
       return 'CLOSED'
@@ -56,7 +56,7 @@ export const isOpen = (listing, today) => {
     case 4:
       const thursdayOpen = operation(listing, 'thursday', 'open');
       const thursdayClosed = operation(listing, 'thursday', 'close')
-      if (hours > convertMilTime(thursdayOpen) && hours < convertMilTime(thursdayClosed)) {
+      if (hours > convertMilTime("8:00am") && hours < convertMilTime("12:00am")) {
         return 'OPEN NOW'
       }
       return 'CLOSED'
@@ -64,7 +64,7 @@ export const isOpen = (listing, today) => {
     case 5:
       const fridayOpen = operation(listing, 'friday', 'open');
       const fridayClosed = operation(listing, 'friday', 'close')
-      if (hours > convertMilTime(fridayOpen) && hours < convertMilTime(fridayClosed)) {
+      if (hours > convertMilTime("8:00am") && hours < convertMilTime("12:00am")) {
         return 'OPEN NOW'
       }
       return 'CLOSED'

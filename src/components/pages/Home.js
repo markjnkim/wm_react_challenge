@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import get from 'lodash.get';
 import { locate } from '../../actions';
-import response from '../../helper/locObj'
 import logo from '../../assets/logo.png';
 import ListingCards from '../listing_cards';
 import Locate from '../../icons/locate';
@@ -32,19 +31,15 @@ const regionLabels = {
   doctor: <span><Icon><Doctor fill={'#7e7979'} width={'40px'} height={'25px'} /> </Icon> Doctors</span>,
 };
 
-export class App extends Component {
+export class Home extends Component {
   constructor(props) {
     super(props);
-    // console.log("Constructor: ", this.props)
+
     this.state = {
       loadingTimer: 0,
     };
   }
-  // componentDidMount() {
-  //   // this.props.requestLectures(this.props.isLoading);
 
-  //   console.log("CDM: ", this);
-  // }
   locateMe() {
   const { dispatch } = this.props;
   if (navigator.geolocation) {
@@ -55,8 +50,7 @@ export class App extends Component {
   };
 
   render() {
-    const { isLocating, location, regions, error } = response.data;
-    // console.log("Props Location: ", location)
+    const { isLocating, location, regions, error } = this.props.location;
     
     const getLabel = (listings, label) => {
       if (get(listings, 'listings').length) {
@@ -123,7 +117,7 @@ const mapStateToProps = (state) => {
   return { location: state.location };
 }
 
-App.propTypes = {
+Home.propTypes = {
   isLocating: PropTypes.bool.isRequired,
   location: PropTypes.object,
   regions: PropTypes.object,
@@ -131,11 +125,11 @@ App.propTypes = {
   error: PropTypes.object,
 };
 
-App.defaultProps = {
+Home.defaultProps = {
   isLocating: false,
   location: {},
   regions: {},
   error: {},
 };
 
-export default connect(mapStateToProps)(App);
+export default connect(mapStateToProps)(Home);
