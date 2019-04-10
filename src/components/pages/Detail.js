@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 // import styled from "styled-components";
 import get from "lodash.get";
 import Avatar from "../avatar";
-import { starWidth, isOpen } from "../../fetch/starLength";
+import { starWidth, isOpen } from "../../helper/starLength";
 import StarRating from "../star_rating";
 import {
     DIV1,
@@ -34,11 +34,6 @@ const ListingDetail = ({listing}) => (
     </DivWrapper>
   </CardWrapper>
     );
-
-
-
-
-
 
 const mapStateToProps = (state) => {
     return { listing: state.listing }
