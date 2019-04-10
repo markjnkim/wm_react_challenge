@@ -3,13 +3,12 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import get from "lodash.get";
 import Avatar from "../avatar";
-import { starWidth, isOpen } from "../../helper/conversion";
+import { starWidth } from "../../helper/conversion";
 import logo from '../../assets/logo.png';
 import StarRating from "../star_rating";
 import response from '../../helper/readmeObj';
 import {
   DIV1,
-  DIV2,
   DIV3,
   DivWrapperDetail,
   AppWrapperDetail,
@@ -23,24 +22,23 @@ import {
   Footer,
   BFooter,
   DivCity,
+  LinkTag,
+  Stars,
 } from "../styles";
-
 
 const ListingDetail = (props) => {
   // const ListingDetail = ({listing}) => {
   const { listing } = response;
-console.log(listing)
+  console.log(listing)
   return (
     <AppWrapperDetail>
       <DetailHeader>
         <DIVNAME>
           {listing.name}
-          <br />
-          <DIV3>
-            <br />
-            <StarRating width={starWidth(listing.rating)} />
-            <SpanRatingDetail>{listing.rating.toFixed(1)}</SpanRatingDetail>
-          </DIV3>
+            <Stars>
+              <StarRating width={starWidth(listing.rating)} />
+              <SpanRatingDetail>{listing.rating.toFixed(1)}</SpanRatingDetail>
+            </Stars>
         </DIVNAME>
         <AvatarWrapperDetail>
           <Avatar img={`${get(listing, "avatar_image.small_url")}`} />
@@ -49,13 +47,15 @@ console.log(listing)
       <CardWrapperDetail>
         <DivWrapperDetail>
           <DivCity> {listing.city}, {listing.state} |  {Math.floor(listing.distance)}mi </DivCity>
+          <br />
           <DIV1> {listing.name} </DIV1>
-          <DIV3>{listing.type && (<p> Type: {listing.type}</p>)}</DIV3>
-          <DIV3>{listing.license_type && (<p>{listing.license_type}</p>)}</DIV3>
-          <DIV3>{listing.website && (<p>Website: {listing.website}</p>)}</DIV3>
-          <DIV3>{listing.todays_hours_str && (<p> Today's Hours: {listing.todays_hours_str}</p>)}
-          </DIV3>
-          <div>{listing.open_now ? <SpanOpen>NOW OPEN</SpanOpen> : <SpanClosed>CLOSED</SpanClosed>}
+          <DivCity>{listing.type && (<p> Business Type: {listing.type}</p>)}</DivCity>
+          <DivCity>{listing.license_type && (<p>License: {listing.license_type}</p>)}</DivCity>
+          <LinkTag>{listing.website && (<a href={listing.website}>{listing.website}</a>)}</LinkTag>
+          <DivCity>{listing.todays_hours_str && (<p> Today's Hours: {listing.todays_hours_str}</p>)}
+          </DivCity>
+          <div>
+            {listing.open_now ? <SpanOpen>NOW OPEN</SpanOpen> : <SpanClosed>CLOSED</SpanClosed>}
           </div>
         </DivWrapperDetail>
       </CardWrapperDetail >

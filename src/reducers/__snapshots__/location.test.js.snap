@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`location reducer should handle RECEIVE 1`] = `
+Object {
+  "dispatch": [MockFunction],
+  "isLocating": false,
+  "listing": Object {
+    "selectedListing": null,
+  },
+  "location": undefined,
+  "regions": undefined,
+}
+`;
+
+exports[`location reducer should handle REQUEST 1`] = `
+Object {
+  "dispatch": [MockFunction],
+  "isLocating": true,
+  "listing": Object {
+    "selectedListing": null,
+  },
+  "location": Object {
+    "isLocation": false,
+    "location": null,
+    "regions": null,
+  },
+}
+`;
+
+exports[`location reducer should return the initial state 1`] = `
+Object {
+  "isLocating": false,
+  "location": null,
+  "regions": null,
+}
+`;

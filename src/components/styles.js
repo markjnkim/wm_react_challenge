@@ -173,6 +173,10 @@ export const CardWrapper = styled.div`
 
   @media (max-width: 700px) {
     width: 100%;
+          width: 90%;
+      margin: 0px;
+      position: absolute;
+      left: 5px;
   }
   // @media (max-width: 600px) {
   //   width: 92%;
@@ -237,6 +241,7 @@ export const DetailHeader = styled.div`
   @media (max-width: 700px) {
     height: 300px;
     flex-direction: column;
+    margin: auto;
     img {
       position: absolute;
       top: 5px;
@@ -250,10 +255,13 @@ margin-left: 7px;
 font-weight: bold;
 font-size: 3vw;
 order: 1;
+// border: solid 3px red;
 
 @media (max-width: 600px) {
   font-size: 12px !important;
   order: 2;
+  float: left;
+  margin-right: 78px;
 }
 `;
 
@@ -262,19 +270,21 @@ export const SpanRatingDetail = styled.span`
   padding-left: 5px;
   font-size: 2vw;
   
-  @media (max-width: 700px) {
+  @media (max-width: 720px) {
     order: 2;
+    padding-bottom: 8px;
   }
 `;
 
 export const AppWrapperDetail = styled.div`
   margin-bottom: -20px;
-  padding-bottom: 0px;
+  padding-bottom: 30px;
   text-align: center;
   background-color: #EAEAEA;
   min-width: 450px !important;
   position: relative;
   min-height: 100vh;
+
 `;
 
 export const AvatarWrapperDetail = styled.div`
@@ -303,14 +313,24 @@ export const CardWrapperDetail = styled.div`
   text-align: left;
   padding-top: 25px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   margin-right: 20px;
   margin: 10px 10%;
   background-color: white;
   border-radius: 6px;
   cursor: pointer;
-  padding-bottom: 2.5rem;
+  padding-bottom: 3.5rem;
   min-height: 300px;
+  max-height: 200px;
+
+
+  @media (max-width: 700px) {
+    width: 75%;
+    margin-left: 25px;
+    position: relative;
+    // padding-bottom: 15px;
+    margin-bottom: 35px;
+  }
 `;
 
 export const DivWrapperDetail = styled.div`
@@ -325,7 +345,7 @@ export const DivWrapperDetail = styled.div`
     float: left;
   }
   @media (max-width: 600px) {
-      padding: 0% 5%;
+      padding: 0px;
     }
 `;
 export const SpanOpen = styled.span`
@@ -376,4 +396,18 @@ export const DivCity = styled.div`
   color: black;
   font-size 14px;
   font-weight: bold;
+`;
+
+export const LinkTag = styled.div`
+  margin: 4px;
+  padding: 3px;
+  color: #12C3A0;
+  font-size 14px;
+  font-weight: bold;
+`;
+
+export const Stars = styled.div`
+  padding-bottom: 15px;
+  float: left:
+  padding-left: 15px;
 `;

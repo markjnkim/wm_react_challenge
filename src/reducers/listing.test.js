@@ -1,5 +1,5 @@
 // ./**tests**/reducer_test.js
-import reducer from './location'
+import reducer from './listing'
 // import {initialState} from '../src/redux/reducer'
 
 
@@ -8,7 +8,7 @@ describe('location reducer', () => {
     expect(reducer(undefined, {})).toMatchSnapshot()
   })
 
-  it('should handle REQUEST', () => {
+  it('should handle DETAIL_SELECTED', () => {
    
     expect(
       reducer({
@@ -23,28 +23,10 @@ describe('location reducer', () => {
         dispatch: jest.fn(),
       },
       {
-        type: 'REQUESTING'
+        type: 'DETAIL_SELECTED'
       })
     ).toMatchSnapshot()
   })
 
-  it('should handle RECEIVE', () => {
-   
-    expect(
-      reducer({
-        listing: {
-          selectedListing: null
-        },
-        location: {
-          isLocation: false,
-          location: null,
-          regions: null,
-        },
-        dispatch: jest.fn(),
-      },
-      {
-        type: 'RECEIVING'
-      })
-    ).toMatchSnapshot()
-  })
+  
 })
