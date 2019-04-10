@@ -21,6 +21,8 @@ export const AppWrapper = styled.div`
   text-align: center;
   background-color: #EAEAEA;
   min-width: 450px !important;
+  min-height: 100vh;
+  padding-bottom: 40px;
 `;
 
 export const Icon = styled.div`
@@ -219,18 +221,26 @@ export const DIVO = styled.div`
 `;
 
 export const DetailHeader = styled.div`
-  height: 230px;
+  height: 260px;
   display: flex;
-  padding: 0 20px;
+  padding: 30px 20px;
   justify-content: space-between;
   align-items: center;
   background-color: #222;
   color: #fff;
-  clearfix: auto;
+  position: relative
 
   img {
     width: 210px;
     height: 225px;
+  }
+  @media (max-width: 700px) {
+    height: 300px;
+    flex-direction: column;
+    img {
+      position: absolute;
+      top: 5px;
+    }
   }
 `;
 
@@ -239,16 +249,18 @@ text-align: left;
 margin-left: 7px;
 font-weight: bold;
 font-size: 3vw;
+order: 1;
 
 @media (max-width: 600px) {
   font-size: 12px !important;
+  order: 2;
 }
 `;
 
 export const SpanRatingDetail = styled.span`
   color: #12C3A0;
   padding-left: 5px;
-  font-size: 3vw;
+  font-size: 2vw;
   
   @media (max-width: 700px) {
     order: 2;
@@ -256,10 +268,112 @@ export const SpanRatingDetail = styled.span`
 `;
 
 export const AppWrapperDetail = styled.div`
-  margin-bottom: 20px;
+  margin-bottom: -20px;
+  padding-bottom: 0px;
   text-align: center;
   background-color: #EAEAEA;
   min-width: 450px !important;
-  height: 100%;
-  min-height: 600px;
+  position: relative;
+  min-height: 100vh;
+`;
+
+export const AvatarWrapperDetail = styled.div`
+  // vertical-align: bottom;
+  // padding: 0%;
+  order: 2;
+  margin: 10px;
+  padding 5px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  // bottom: 10px;
+  @media (max-width: 700px) {
+    order: 0;
+    right: 140px;
+    top: 65px;
+
+  }
+`;
+
+
+export const CardWrapperDetail = styled.div`
+  // width: 80%;
+  // height: 300px;
+  // display: flex;
+  text-align: left;
+  padding-top: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin: 10px 10%;
+  background-color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  padding-bottom: 2.5rem;
+  min-height: 300px;
+`;
+
+export const DivWrapperDetail = styled.div`
+  margin: 4px;
+  padding: 0 20%;
+  width: 100%;
+
+  clearfix: auto;
+  order: 2;
+  @media (max-width: 700px) {
+    order: 1;
+    float: left;
+  }
+  @media (max-width: 600px) {
+      padding: 0% 5%;
+    }
+`;
+export const SpanOpen = styled.span`
+  color: #12C3A0;
+  font-weight: bold;
+  padding-left: 5px;
+  font-size: 13px;
+  
+  @media (max-width: 700px) {
+    order: 2;
+  }
+`;
+export const SpanClosed = styled.span`
+  color: red;
+  font-weight: bold;
+  padding-left: 5px;
+  font-size: 13px;
+  
+  @media (max-width: 700px) {
+    order: 2;
+  }
+`;
+
+export const Footer = styled.div`
+  background-color: #12C3A0;
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: 20px;
+`;
+export const BFooter = styled.div`
+  background-color: black;
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: 0px;
+  padding-top: 15px;
+  text-align: right;
+  img {
+    width: 110px;
+    height: 25px;
+  }
+`;
+
+export const DivCity = styled.div`
+  margin: 4px;
+  padding: 3px;
+  color: black;
+  font-size 14px;
+  font-weight: bold;
 `;

@@ -21,7 +21,9 @@ import {
   TextContent,
   LocateButton,
   CardStyle,
-  Icon
+  Icon,
+  BFooter,
+  Footer,
 } from '../styles';
 
 const regionTypes = ['delivery', 'dispensary', 'doctor'];
@@ -41,9 +43,9 @@ export class Home extends Component {
   }
 
   locateMe() {
-  const { dispatch } = this.props;
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(position => {
+    const { dispatch } = this.props;
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(position => {
         dispatch(locate(position.coords));
       });
     }
@@ -51,7 +53,7 @@ export class Home extends Component {
 
   render() {
     const { isLocating, location, regions, error } = this.props.location;
-    
+
     const getLabel = (listings, label) => {
       if (get(listings, 'listings').length) {
         return (
@@ -107,6 +109,8 @@ export class Home extends Component {
             </React.Fragment>
           )}
         </AppContent>
+        <Footer />
+        <BFooter ><img src={logo} alt="weedmaps logo" /></BFooter>
       </AppWrapper>
     );
   }

@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 // import styled from "styled-components";
 import get from "lodash.get";
 import Avatar from "../avatar";
-import { starWidth, isOpen } from "../../helper/starLength";
+import { starWidth, isOpen } from "../../helper/conversion";
 import StarRating from "../star_rating";
 import {
     DIV1,
