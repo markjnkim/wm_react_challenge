@@ -39,7 +39,6 @@ export const locate = coords => async (dispatch) => {
     dispatch(receiveLocation(coords, data));
   } catch (e) {
     dispatch(error(e));
-    // console.log(e);
   }
 };
 

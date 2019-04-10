@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { withRouter } from "react-router-dom";
 import get from "lodash.get";
 import Avatar from "../avatar";
-import { starWidth, isOpen } from "../../helper/starLength";
+import { starWidth, isOpen } from "../../helper/conversion";
 import StarRating from "../star_rating";
 import { selectList } from "../../actions";
 import {
