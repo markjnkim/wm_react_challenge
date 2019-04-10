@@ -324,6 +324,7 @@ export const CardWrapperDetail = styled.div`
   padding-bottom: 3.5rem;
   min-height: 250px;
   max-height: 200px;
+  box-shadow: 5px 5px 5px #D3D3D3;
 
 
   @media (max-width: 700px) {

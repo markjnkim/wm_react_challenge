@@ -10,7 +10,6 @@ import response from '../../helper/readmeObj';
 import { Link } from 'react-router-dom';
 import {
   DIV1,
-  DIV3,
   DivWrapperDetail,
   AppWrapperDetail,
   DetailHeader,
@@ -47,7 +46,7 @@ const ListingDetail = (props) => {
           </Stars>
         </DIVNAME>
         <AvatarWrapperDetail>
-          <a href={listing.website} target="_blank">
+          <a href={listing.website} target="_blank" rel="noopener noreferrer">
             <Avatar img={`${get(listing, "avatar_image.small_url")}`} />
           </a>
         </AvatarWrapperDetail>
@@ -59,7 +58,7 @@ const ListingDetail = (props) => {
             <DIV1> {listing.name} </DIV1>
             <DivCity>{listing.type && (<p> Business Type: {listing.type}</p>)}</DivCity>
             <DivCity>{listing.license_type && (<p>License: {listing.license_type}</p>)}</DivCity>
-            <LinkTag>{listing.website && (<a href={listing.website} target="_blank">{listing.website}</a>)}</LinkTag>
+            <LinkTag>{listing.website && (<a href={listing.website} rel="noopener noreferrer" target="_blank">{listing.website}</a>)}</LinkTag>
             <DivCity>{listing.todays_hours_str && (<p> Today's Hours: {listing.todays_hours_str}</p>)}
             </DivCity>
             <div>
