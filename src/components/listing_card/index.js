@@ -43,7 +43,7 @@ const ListingCard = ({listing, selectList, history}) => {
   );
 };
 
-const mapStateToProps = state => state.location;
+// const mapStateToProps = state => state.location;
 
 ListingCard.propTypes = {
   selectedListing: PropTypes.object,
@@ -51,4 +51,4 @@ ListingCard.propTypes = {
 ListingCard.defaultProps = {
   selectedListing: {},
 };
-export default withRouter(connect(mapStateToProps, { selectList })(ListingCard));
+export default withRouter(connect(null, { selectList })(ListingCard));

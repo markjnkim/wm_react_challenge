@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`location reducer should handle DETAIL_SELECTED 1`] = `
+Object {
+  "dispatch": [MockFunction],
+  "listing": Object {
+    "selectedListing": null,
+  },
+  "location": Object {
+    "isLocation": false,
+    "location": null,
+    "regions": null,
+  },
+  "selectedListing": undefined,
+}
+`;
+
+exports[`location reducer should return the initial state 1`] = `
+Object {
+  "selectedListing": null,
+}
+`;
